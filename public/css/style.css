@@ -44,21 +44,21 @@ p[data-timeout] {
 
 
 
-/* Individual card */
+
 .blog-card {
-    width: 90%; /* Adjust the card width as needed */
+    width: 90%;
     margin-bottom: 20px;
     position: relative;
 }
 
-/* Slight displacement on hover */
+
 .blog-card:hover {
-    transform: translate(10px, -5px); /* Adjust the displacement values as desired */
+    transform: translate(10px, -5px);
     box-shadow: 0 4px 6px rgb(40, 167, 69);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-/* Shadow layer on hover */
+
 .blog-card:hover::before {
     transform: translateY(0);
 }
@@ -66,7 +66,7 @@ p[data-timeout] {
 .blog-card .card-body {
     padding: 15px;
     text-align: center;
-    background-color: #fff; /* Card background color */
+    background-color: #fff;
 }
 
 .blog-card h4 {
@@ -78,16 +78,16 @@ p[data-timeout] {
 }
 
 .blog-card .btn-success {
-    background-color: #28a745; /* Button background color */
-    border-color: #28a745; /* Button border color */
-    color: #fff; /* Button text color */
+    background-color: #28a745;
+    border-color: #28a745;
+    color: #fff;
     padding: 5px 20px;
     text-decoration: none;
     border-radius: 0;
 }
 
 .blog-card .btn-success:hover {
-    background-color: #218838; /* Button background color on hover */
+    background-color: #218838;
 }
 
 
@@ -116,18 +116,14 @@ p[data-timeout] {
 }
 
 
-/*.error-msg {*/
-/*    color: #dc3545;*/
-/*    font-size: 0.85rem;*/
-/*}*/
 
 
-/* Error message styles */
+
 .error-msg {
     color: #dc3545;
     font-size: 0.85rem;
-    transition: opacity 0.5s ease-in-out; /* Add a smooth transition effect */
-    opacity: 1; /* Set initial opacity to fully visible */
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
 }
 
 
