@@ -43,15 +43,53 @@ p[data-timeout] {
 }
 
 
-.blog-card:hover {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease-in-out;
-}
 
-
+/* Individual card */
 .blog-card {
-    background-color: #fff;
+    width: 90%; /* Adjust the card width as needed */
+    margin-bottom: 20px;
+    position: relative;
 }
+
+/* Slight displacement on hover */
+.blog-card:hover {
+    transform: translate(10px, -5px); /* Adjust the displacement values as desired */
+    box-shadow: 0 4px 6px rgb(40, 167, 69);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Shadow layer on hover */
+.blog-card:hover::before {
+    transform: translateY(0);
+}
+
+.blog-card .card-body {
+    padding: 15px;
+    text-align: center;
+    background-color: #fff; /* Card background color */
+}
+
+.blog-card h4 {
+    margin-top: 0;
+}
+
+.blog-card hr {
+    border-top: 1px solid #ccc;
+}
+
+.blog-card .btn-success {
+    background-color: #28a745; /* Button background color */
+    border-color: #28a745; /* Button border color */
+    color: #fff; /* Button text color */
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 0;
+}
+
+.blog-card .btn-success:hover {
+    background-color: #218838; /* Button background color on hover */
+}
+
 
 
 .image-with-shadow:hover {
